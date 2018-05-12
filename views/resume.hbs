@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{> head}}
+	<link rel="stylesheet" type="text/css" href="/actor/resume/style-resume.css">
+</head>
+<body>
+	{{> nav}}
+	
+	<div class="resume-box">
+		<embed src="/static/acting-resume.pdf" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+	</div>
+	<div class="errorBox">
+		<div class="post">
+			<h2>Whoops!</h2>
+			<p>You need the Flash plugin to view this document online.  Click here to <a href="assets/acting-resume.pdf" download>download the document</a>.</p>
+		</div>
+	</div>
+
+
+	{{> bootstrapScripts}}
+</body>
+</html>
