@@ -15,7 +15,7 @@ app.set('view engine', 'hbs');
 app.use((req, res, next) => {
 	const now = new Date().toString();
 	const log = `${now}: ${req.method} ${req.url}`;
-	fs.fileAppend('server.log', log + "\n", (err) => {
+	fs.appendFile('server.log', log + "\n", (err) => {
 		if(err) {
 			console.log("ERROR:  Unable to append to server.log!");
 		}
